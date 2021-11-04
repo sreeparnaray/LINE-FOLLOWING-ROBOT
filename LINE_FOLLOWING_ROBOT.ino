@@ -1,3 +1,6 @@
+//LINE FOLLOWER ROBOT
+//--Sreeparna Ray
+
 #include <AFMotor.h>
 
 //defining pins and variables
@@ -21,10 +24,6 @@ void setup() {
 }
 
 void loop(){
-  //printing values of the sensors to the serial monitor
-  Serial.println(analogRead(left));
-  
-  Serial.println(analogRead(right));
 
   //line detected by both
   if(!analogRead(left)<=1000 && !analogRead(right)<=1000){
